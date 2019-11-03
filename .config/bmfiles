@@ -1,0 +1,12 @@
+bf	~/.config/bmfiles
+bd	~/.config/bmdirs
+cfb	~/.bashrc
+cfa	~/.config/aliasrc
+cfv	~/.config/nvim/init.vim
+cfm	~/.config/mutt/muttrc
+cfd	~/.Xdefaults
+cfu	~/.config/newsboat/urls
+cfn	~/.config/newsboat/config
+cfmb	~/.config/ncmpcpp/bindings
+cfmc	~/.config/ncmpcpp/config
+cfk	~/.config/sxhkd/sxhkdrc

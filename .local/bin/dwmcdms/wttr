@@ -1,0 +1,9 @@
+#!/bin/bash
+pgrep -x dmenu && exit
+
+location=$(echo "⛅" | dmenu -i -p "Enter a location:")
+
+getforecast() { ping -q -c 1 1.1.1.1 >/dev/null || exit 1
+curl -s "wttr.in/$location" > "$HOME/.local/share/weatherreport" || exit 1 ;}
+
+getforecast && $TERMINAL -e less $HOME/.local/share/weatherreport
